@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.row::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+body{
+    color: #222328;
+}
+/*cus*/
+/*레이어 팝업*/
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: none;
+}
+.modal .modal_inner{
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.modal .modal_inner button{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+/*cus main_page*/
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*헤더*/
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 10;
+}
+header h1{
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+}
+header nav{
+    float: right;
+    width: 700px;
+    padding-top: 30px;
+}
+header nav ul.gnb{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: #fff;
+}
+header nav ul.gnb>li{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+header nav ul.gnb>li>a{
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+header nav ul.gnb>li:hover>a{
+    background-color: black;
+    color: #fff;
+}
+header nav ul.gnb>li>ul.sub{
+    width: 100%;
+    line-height: 40px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+header nav ul.gnb>li>ul.sub>li{
+    width: 100%;
+    height: 40px;
+}
+header nav ul.gnb>li>ul.sub>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header nav ul.gnb>li>ul.sub>li:hover>a{
+    background-color: black;
+    color: #fff;
+}
+/*슬라이드*/
+.slide{
+    width: 100%;
+    height: 300px;
+    background-color: #bbb;
+    position: relative;
+    overflow: hidden;
+}
+.slide ul.slide_all{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+.slide ul.slide_all>li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+/*컨텐츠*/
+.contents{
+    width: 100%;
+    height: 200px;
+    
+}
+.contents section{
+    float: left;
+}
+.contents .notice_gal{
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+.contents .notice_gal h3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.contents .notice_gal h3.r100{
+    left: 100px;
+}
+.contents .notice_gal h3.on{
+    background-color: black;
+}
+.contents .notice_gal ul{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display: none;
+}
+.contents .notice_gal ul.on{
+    display: block;
+    
+}
+.contents .notice_gal ul.notice{
+    width: 100%;
+}
+.contents .notice_gal ul.notice li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.contents .notice_gal ul.notice li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.contents .notice_gal ul.notice li a:hover{
+    color: #ccc;
+}
+.contents .notice_gal ul.notice li a .day{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+}
+
+.contents .notice_gal ul.gal{
+    width: 100%;
+}
+.contents .notice_gal ul.gal li{
+    width: 120px;
+    height: 120px;
+    float: left;
+    background-size: 100px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.contents .notice_gal ul.gal li:nth-child(1){
+    background-image: url(../images/gallery1.jpg);
+}
+.contents .notice_gal ul.gal li:nth-child(2){
+    background-image: url(../images/gallery2.jpg);
+}
+.contents .notice_gal ul.gal li:nth-child(3){
+    background-image: url(../images/gallery3.jpg);
+}
+.contents .notice_gal ul.gal li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.contents .banner{
+    width: 400px;
+    height: 200px;
+}
+.contents .baro{
+    width: 400px;
+    height: 200px;
+}
+.contents .baro h3{
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/cs.jpg);
+    background-size: 400px 200px;
+}
+
+
+
+/*푸터*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ddd;
+}
+
+footer p{
+    float: left;
+    width: 200px;
+    padding-top: 30px;
+}
+footer .copy{
+    float: left;
+    width: 800px;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+footer .sns{
+    float: left;
+    width: 200px;
+    height: 100px;
+    padding-top: 30px;
+}
